@@ -1,0 +1,17 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
+    <p>Road component</p>
+    <ul>
+      <li><a routerLink="/road">Zero</a></li>
+      <li><a routerLink="first">First (Guarded)</a></li>
+      <li>
+        <span>Second</span>
+        <ul>
+          <li><a routerLink="second">Alpha (Lazy Loaded Module)</a></li>
+          <li><a routerLink="second/beta">Beta (Lazy Loaded Module + Guarded)</a></li>
+        </ul>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+</div>
