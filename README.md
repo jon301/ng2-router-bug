@@ -7,3 +7,7 @@ https://github.com/angular/angular/issues/12682
 - `npm install` or `yarn`
 - `npm start`
 - Follow the instructions on the page
+
+# Demo (GIF)
+
+http://d.pr/i/jg6I
