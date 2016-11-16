@@ -1,20 +1,23 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">{{ title }}</span>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" routerLink="">Home</a>
-      <a class="mdl-navigation__link" routerLink="road">Road</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <!-- Your content goes here -->
-      <router-outlet></router-outlet>
-    </div>
-  </main>
+<h1 routerLink="/">{{ title }}</h1>
+
+<div>
+  <p>Go to "/"</p>
+  <p>Reload the page</p>
+  <p>Open the console</p>
+  <p>Click on the link below</p>
+  <p><a routerLink="road/second/beta">Beta (Lazy Loaded Module + routerLink : NO BUG)</a></p>
 </div>
+
+<hr />
+
+<div>
+  <p>Now go to "/"</p>
+  <p>Reload the page</p>
+  <p>Open the console</p>
+  <p>Click on the link below</p>
+  <p><a href="#/road/second/beta">Beta (Lazy Loaded Module + href : BUG)</a></p>
+</div>
+
+<hr />
+
+<router-outlet></router-outlet>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FirstGuard } from '../../services';
 import * as components from './index';
 
 export const routes: Routes = [
@@ -9,13 +8,8 @@ export const routes: Routes = [
     component: components.SecondComponent,
     children: [
       {
-        path: '',
-        component: components.AlphaComponent
-      },
-      {
         path: 'beta',
-        component: components.BetaComponent,
-        canActivate: [ FirstGuard ]
+        component: components.BetaComponent
       }
     ]
   }

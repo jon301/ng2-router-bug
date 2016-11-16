@@ -10,7 +10,6 @@ import * as components from './index';
   ],
   declarations: [
     components.SecondComponent,
-    components.AlphaComponent,
     components.BetaComponent
   ],
   exports: [ components.SecondComponent ]
